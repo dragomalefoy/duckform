@@ -1,12 +1,12 @@
 
 body {
-    width: 1440px;
-    height: 900px;
+    width: 1264px;
+    height: 895px;
     background: #9DBEBB;
-    font-family: Roboto;
     font-style: normal;
     margin: auto;
     position: absolute;
+    font-family: 'Roboto', sans-serif;
 }
 main {
     width: 954px;
@@ -14,8 +14,8 @@ main {
     background: #BE0909;
     box-shadow: 0px 0px 32px rgb(0 0 0 / 25%);
     position: absolute;
-    top: 205px;
-    left: 243px;
+    top: 163px;
+    left: 195px;
 }
 
 .yellow_box {
@@ -24,8 +24,7 @@ main {
     left: 852px;
     top: 205px;
     background: #FFB039;
-    position: fixed;
-    margin: auto;
+    position: sticky;
 }
 
 .duck {
@@ -37,17 +36,19 @@ main {
 }
 
 form {
-    width: 362px;
-    height: 400px;
+    width: 274px;
+    height: 91%;
     position: absolute;
-    left: 65px;
-    top: 64px;
+    left: 64px;
+    top: 20px;
     font-size: 18px;
-    color: white;
+    color: #FEFFFF;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
 }
 
 #fullname {
@@ -85,27 +86,44 @@ input[type=text]:focus {
     border-bottom: 1px solid #9DBEBB;
     width: 213px;
     height: 72px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    appearance: none;
+    border-right: none;
 }
 
 #messagebox {
     width: 400px;
     height: 72px;
     border-bottom: 1px solid #9DBEBB;
+    background-color: transparent;
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: #FEFFFF;
+    letter-spacing: 0.3em;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 
 textarea {
-    width: 100%;
-  height: 150px;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: #f8f8f8;
-  resize: none;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: none;
 }
 
 #button {
     background-color: #468189;
-    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 12px rgb(0 0 0 / 50%);
     border-radius: 40px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    width: 202px;
+    height: 48px;
 }
